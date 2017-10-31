@@ -2,7 +2,7 @@
 > Developed for project 6 of 6 as part of the **Udacity Full Stack Web Developer Nanodegree**.
 
 # Linux Server Configuration
-My personal set of server configuration instructions for the  [Udacity Full Stack Web Developer Nanodegree](https://www.udacity.com/uconnect/intensive/full-stack-web-developer-nanodegree) Linux Server Project, made on a Linode server with Ubuntu.
+My personal set of server configuration instructions for the  [Udacity Full Stack Web Developer Nanodegree](https://www.udacity.com/uconnect/intensive/full-stack-web-developer-nanodegree) Linux Server Project, hosted on a Linode server running Ubuntu.
 
 <p align="center">
 <img src="https://i.imgur.com/cx0bJYF.png">
