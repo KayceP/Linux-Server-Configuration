@@ -12,11 +12,11 @@ My personal set of server configuration instructions for the  [Udacity Full Stac
 
 For this project, we were tasked with taking a baseline installation of a Linux distribution and preparing it to host a previous web application we built, the [Item Catalog Project](https://github.com/KayceP/OMenu). 
 
-This included installing updates, securing it from a number of attack vectors and installing/configuring web and database servers.
+This included installing updates, additional packages, securing it from a number of attack vectors and installing/configuring web and database servers.
 
 Our reviewer was issued a login with root access, and had to log into our server and validate our work, and tested the server/web application for functonality and security.
 
-While not meant for anyone to test beyond our reviewer, the full project details will be documented below.
+The full steps I took to complete the project are documented below.
 
 This project utilizes:
 
@@ -38,7 +38,7 @@ This project utilizes:
 - For a live demo of the web application being hosted, [click here](http://www.patternrecognition.io/omenu).
 
 
-- This live demonstration will be moved in the future, so if it is inactive my apologies! Please contact me through GitHub if you'd like to see the remotely hosted demo.
+- This live demonstration will be moved in the future, so if it is inactive my apologies! Please contact me if you'd like to see the remotely hosted demo.
 
 
 ## Credits
