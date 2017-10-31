@@ -10,7 +10,7 @@ My personal set of server configuration instructions for the  [Udacity Full Stac
 
 ## Project Overview
 
-For this project, we were tasked with taking a baseline installation of a Linux distribution on a virtual machine and preparing it to host a previous web application we built, the [Item Catalog Project](https://github.com/KayceP/OMenu). 
+For this project, we were tasked with taking a baseline installation of a Linux distribution and preparing it to host a previous web application we built, the [Item Catalog Project](https://github.com/KayceP/OMenu). 
 
 This included installing updates, securing it from a number of attack vectors and installing/configuring web and database servers.
 
