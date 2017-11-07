@@ -90,7 +90,7 @@ Below you will find each and every step I personally took to configure my custom
 1. Run the command `$ apt-get install finger`.
 
 ### 4 - Configure SSH key-based authentication for our 'grader' user.
-1. First, create the SSH encryption key on your local machine, with the command: `ssh-keygen -f ~/.ssh/udacity_grader_ssh_key.rsa`. _(You can change the filename, of course)_
+1. First, create the SSH encryption key on your local machine, with the command: `ssh-keygen -f /home/.ssh/udacity_grader_ssh_key.rsa`. _(You can change the filename, of course)_
    * I used my own personal Raspberry Pi Linux server for this.
 2. Log into your remote server as your root user, via ssh.
 3. Run the command: `$ touch /home/grader/.ssh/authorized_keys`.
