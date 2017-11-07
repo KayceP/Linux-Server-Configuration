@@ -73,8 +73,6 @@ Below you will find each and every step I personally took to configure my custom
    * Nano will open with this new file, add the text `grader ALL=(ALL:ALL) ALL`.
    * Save the file, and exit nano.
    
-   $ ssh -i ~/.ssh/grader.rsa grader@104.237.156.17
-   
 ### 2 - Update and and all currently installed packages on the server.
 
 1. Run the command `$ sudo apt-get update`. _(This may take some time)_
