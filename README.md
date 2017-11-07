@@ -65,13 +65,29 @@ Below you will find each and every step I personally took to configure my custom
 
 ### Step 1 - Create a new user named grader and grant this user sudo permissions.
 
-1. Log into the server remotely, as the root user, using SSH for security: `$ ssh root@104.237.156.17`. Replace 'root' with your root username, if different.
+1. Log into the server remotely, as the root user, using SSH for security: `$ ssh root@104.237.156.17`. 
+   * Replace 'root' with your root username, if different.
 2. Add a new user, in this instance one called 'grader'. `$ sudo adduser grader`
 3. Grant this new user sudo permissions:
    * Create a file in the 'sudoers' (sudo users) directory, with the nano command: `$ sudo nano /etc/sudoers.d/grader`
    * Nano will open with this new file, add the text `grader ALL=(ALL:ALL) ALL`.
    * Save the file, and exit nano.
+   
+### 2 - Update and and all currently installed packages on the server.
 
+1. Run the command `$ sudo apt-get update`. _(This may take some time)_
+2. Once finished, run the command `$ sudo apt-get upgrade`.
+   * Enter `Y` when prompted to continue the operation.
+3. For Linode servers only, you'll recieve a warning about 'grub-pc' when running these commands:
+
+<p align="center">
+<img src="https://i.imgur.com/oH9AUmj.png">
+</p>
+
+4. Select 'Keep the local version currently installed', so you can continue to use many features of Linode's server manager.
+
+### 3 - Install [finger](https://linux.die.net/man/1/finger), a utility software to check users' status.
+1. Run the command `$ apt-get install finger`.
 
 ## Running (For a casual viewer)
 - For a live demo of the web application being hosted, [click here](http://www.patternrecognition.io/omenu).
