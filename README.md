@@ -20,7 +20,7 @@ The full steps I took to complete the project are documented below.
 
 This project utilizes:
 
-- Linode (A VPS (Virtual Private Server) Provider
+- Linode (A VPS (Virtual Private Server)) Provider
 - Ubuntu (16.04 LTS), using:
   - Uncomplicated Firewall (UFW)
   - Fail2ban
