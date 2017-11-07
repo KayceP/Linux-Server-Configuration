@@ -73,6 +73,8 @@ Below you will find each and every step I personally took to configure my custom
    * Nano will open with this new file, add the text `grader ALL=(ALL:ALL) ALL`.
    * Save the file, and exit nano.
    
+   $ ssh -i ~/.ssh/grader.rsa grader@104.237.156.17
+   
 ### 2 - Update and and all currently installed packages on the server.
 
 1. Run the command `$ sudo apt-get update`. _(This may take some time)_
@@ -88,6 +90,12 @@ Below you will find each and every step I personally took to configure my custom
 
 ### 3 - Install [finger](https://linux.die.net/man/1/finger), a utility software to check users' status.
 1. Run the command `$ apt-get install finger`.
+
+### 4 - Configure SSH key-based authentication for our 'grader' user.
+1. First, create the SSH encryption key on your local machine, with the command: `ssh-keygen -f ~/.ssh/udacity_grader_ssh_key.rsa`. _(You can change the filename, of course)_
+   * I used my own personal Raspberry Pi Linux server for this.
+2. Log into your server as your root user, via ssh.
+3. Run the command: `$ touch /home/grader/.ssh/authorized_keys`.
 
 ## Running (For a casual viewer)
 - For a live demo of the web application being hosted, [click here](http://www.patternrecognition.io/omenu).
