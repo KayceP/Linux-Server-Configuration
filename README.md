@@ -92,13 +92,17 @@ Below you will find each and every step I personally took to configure my custom
 ### 4 - Configure SSH key-based authentication for our 'grader' user.
 1. First, create the SSH encryption key on your local machine, with the command: `ssh-keygen -f ~/.ssh/udacity_grader_ssh_key.rsa`. _(You can change the filename, of course)_
    * I used my own personal Raspberry Pi Linux server for this.
-2. Log into your server as your root user, via ssh.
+2. Log into your remote server as your root user, via ssh.
 3. Run the command: `$ touch /home/grader/.ssh/authorized_keys`.
+   * Copy the content of the udacity_grader_ssh_key.pub file from your local machine to the /home/grader/.ssh/authorized_keys file you just created on the remote VM.
+4. Update permissions for .ssh, and authorized_keys:
+   * `$ sudo chmod 700 /home/grader/.ssh`.
+   * `$ sudo chmod 644 /home/grader/.ssh/authorized_keys`.
+5. Finally change the owner from root to grader: `$ sudo chown -R grader:grader /home/grader/.ssh`.
+6. Now you are able to log into the remote VM through ssh with the following command: `$ ssh -i ~/.ssh/udacity_grader_ssh_key.rsa grader@104.237.156.17`.
 
 ## Running (For a casual viewer)
 - For a live demo of the web application being hosted, [click here](http://www.patternrecognition.io/omenu).
-
-
 - This live demonstration will be moved in the future, so if it is inactive my apologies! Please [contact me](mailto:admin@patternrecognition.io) if you'd like to see the remotely hosted demo.
 
 ## Credits
