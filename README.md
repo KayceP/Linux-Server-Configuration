@@ -49,7 +49,7 @@ This project utilizes:
 - Access to a server running Linux, perferably Ubuntu 16.04 LTS.
 - Shell access to the server, including root.
 
-## Server Information (For Grader)
+## Server Information (For grader)
 
 IP Address: 104.237.156.17
 
