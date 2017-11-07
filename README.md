@@ -70,7 +70,7 @@ Below you will find each and every step I personally took to configure my custom
 3. Grant this new user sudo permissions:
    * Create a file in the 'sudoers' (sudo users) directory, with the nano command: `$ sudo nano /etc/sudoers.d/grader`
    * Nano will open with this new file, add the text `grader ALL=(ALL:ALL) ALL`.
-   * Saved the file, and exit.
+   * Save the file, and exit nano.
 
 
 ## Running (For a casual viewer)
