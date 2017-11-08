@@ -119,6 +119,15 @@ Below you will find each and every step I personally took to configure my custom
 2. Within this file, locate the line 'PermitRootLogin' and change the variable from 'yes' to 'no'.
 3. Refresh the ssh service by running `$ sudo service ssh restart`.
 
+### 8 - Configure Uncomplicated Firewall (UFW)
+
+1. Our project requires that our server only allows incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123).
+2. To do this, execute the following commands once at a time:
+`$ sudo ufw allow 2200/tcp`.
+`$ sudo ufw allow 80/tcp`.
+`$ sudo ufw allow 123/udp`.
+`$ sudo ufw enable`.
+
 ## Running (For a casual viewer)
 - For a live demo of the web application being hosted, [click here](http://www.patternrecognition.io/omenu).
 - This live demonstration will be moved in the future, so if it is inactive my apologies! Please [contact me](mailto:admin@patternrecognition.io) if you'd like to see the remotely hosted demo.
