@@ -127,6 +127,13 @@ Below you will find each and every step I personally took to configure my custom
    * `$ sudo ufw allow 80/tcp`.
    * `$ sudo ufw allow 123/udp`.
    * `$ sudo ufw enable`.
+   
+### 9 - Install Apache, and mod_wsgi
+1. Install Apache by running the command `$ sudo apt-get install apache2`.
+2. Once installed, we'll then want to install 'mod_wsgi' as well. This is an Apache HTTP server addon that allows Apache to serve Flask applications. 
+3. Install mod_wsgi by running the command `$ sudo apt-get install libapache2-mod-wsgi python-dev`.
+4. Then enable the newly installed mod_wsgi with `$ sudo a2enmod wsgi`.
+5. Restard the Apache service. `$ sudo service apache2 start`.
 
 ## Running (For a casual viewer)
 - For a live demo of the web application being hosted, [click here](http://www.patternrecognition.io/omenu).
