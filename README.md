@@ -123,10 +123,10 @@ Below you will find each and every step I personally took to configure my custom
 
 1. Our project requires that our server only allows incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123).
 2. To do this, execute the following commands once at a time:
-`$ sudo ufw allow 2200/tcp`.
-`$ sudo ufw allow 80/tcp`.
-`$ sudo ufw allow 123/udp`.
-`$ sudo ufw enable`.
+   * `$ sudo ufw allow 2200/tcp`.
+   * `$ sudo ufw allow 80/tcp`.
+   * `$ sudo ufw allow 123/udp`.
+   * `$ sudo ufw enable`.
 
 ## Running (For a casual viewer)
 - For a live demo of the web application being hosted, [click here](http://www.patternrecognition.io/omenu).
