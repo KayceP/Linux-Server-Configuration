@@ -103,6 +103,22 @@ Below you will find each and every step I personally took to configure my custom
 5. Finally change the owner from root to grader: `$ sudo chown -R grader:grader /home/grader/.ssh`.
 6. Now you are able to log into the remote VM through ssh with the following command: `$ ssh -i ~/.ssh/udacity_grader_ssh_key.rsa grader@104.237.156.17`.
 
+### 5 - Force key-based authentication as the only login method.
+1. Run the command `$ sudo nano /etc/ssh/sshd_config`. 
+2. Within this file, locate the field 'PasswordAuthentication' and change the variable from 'yes' to 'no'.
+3. Refresh the ssh service by running `$ sudo service ssh restart`.
+
+### 6 - Change the SSH port from 22 to 2200
+1. Run the command `$ sudo nano /etc/ssh/sshd_config`. 
+2. Within this file, locate the first 'Port' line near the top, and change the variable to '2200'.
+3. Refresh the ssh service by running `$ sudo service ssh restart`.
+4. Now you _(and the grader)_ are able to log into the server via ssh with the following command: `$ ssh -i udacity_grader_ssh_key.rsa -p 2200 grader@104.237.156.17`.
+
+### 7 - Disable default login for root
+1. Run the command `$ sudo nano /etc/ssh/sshd_config`. 
+2. Within this file, locate the line 'PermitRootLogin' and change the variable from 'yes' to 'no'.
+3. Refresh the ssh service by running `$ sudo service ssh restart`.
+
 ## Running (For a casual viewer)
 - For a live demo of the web application being hosted, [click here](http://www.patternrecognition.io/omenu).
 - This live demonstration will be moved in the future, so if it is inactive my apologies! Please [contact me](mailto:admin@patternrecognition.io) if you'd like to see the remotely hosted demo.
