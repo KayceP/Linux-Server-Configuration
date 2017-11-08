@@ -108,4 +108,5 @@ Below you will find each and every step I personally took to configure my custom
 - This live demonstration will be moved in the future, so if it is inactive my apologies! Please [contact me](mailto:admin@patternrecognition.io) if you'd like to see the remotely hosted demo.
 
 ## Credits
-- [Placeholder](Placeholder)
+- [iliketomatoes](https://github.com/iliketomatoes/linux_server_configuration)
+- [RobD30](https://github.com/robd30/) (All his encouragement/advice/tips and tricks)
