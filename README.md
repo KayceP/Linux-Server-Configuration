@@ -57,6 +57,8 @@ Open SSH Port: 2200
 
 Private Key: Only shared with our grader at Udacity.
 
+Sudo Password once logged in via SSH: Only shared with our grader at Udacity.
+
 URL of Hosted Application: [http://www.patternrecognition.io/omenu](http://www.patternrecognition.io/omenu)
 
 ## My Detailed Configuration Instructions
