@@ -154,7 +154,8 @@ import logging
 logging.basicConfig(stream=sys.stderr)
 sys.path.insert(0, "/var/www/catalog/")
 
-from catalog import app as application```
+from catalog import app as application
+```
 
 ## Running (For a casual viewer)
 - For a live demo of the web application being hosted, [click here](http://www.patternrecognition.io/omenu).
