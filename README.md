@@ -149,12 +149,12 @@ Below you will find each and every step I personally took to configure my custom
 4. Clone the catalog repository from Github: $ git clone https://github.com/KayceP/OMenu.git catalog.
 5. Make a file named `catalog.wsgi` to serve the application over the mod_wsgi. That file should look like this:
 
-`import sys
+```import sys
 import logging
 logging.basicConfig(stream=sys.stderr)
 sys.path.insert(0, "/var/www/catalog/")
 
-from catalog import app as application`
+from catalog import app as application```
 
 ## Running (For a casual viewer)
 - For a live demo of the web application being hosted, [click here](http://www.patternrecognition.io/omenu).
