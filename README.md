@@ -135,6 +135,27 @@ Below you will find each and every step I personally took to configure my custom
 4. Then ensure the newly installed mod_wsgi is running, with `$ sudo a2enmod wsgi`.
 5. Start the web server. `$ sudo service apache2 start`.
 
+### 10 - Install and Configure Git
+1. Install Git by running the command `$ sudo apt-get install git`.
+2. Configure your username: `$ git config --global user.name <username>`.
+3. Configure your email: `$ git config --global user.email <email>`.
+
+### 11 - Clone your Catalog app from Github
+1. Let's make a new folder in our Apache 'www', for the catalog. 
+   * Go to: `$ cd /var/www`.
+   * Make the directory: `$ sudo mkdir catalog`.
+2. Change owner for the catalog folder: `$ sudo chown -R grader:grader catalog`.
+3. Go inside your new folder: `$ cd /catalog`
+4. Clone the catalog repository from Github: $ git clone https://github.com/KayceP/OMenu.git catalog.
+5. Make a file named `catalog.wsgi` to serve the application over the mod_wsgi. That file should look like this:
+
+`import sys
+import logging
+logging.basicConfig(stream=sys.stderr)
+sys.path.insert(0, "/var/www/catalog/")
+
+from catalog import app as application`
+
 ## Running (For a casual viewer)
 - For a live demo of the web application being hosted, [click here](http://www.patternrecognition.io/omenu).
 - This live demonstration will be moved in the future, so if it is inactive my apologies! Please [contact me](mailto:admin@patternrecognition.io) if you'd like to see the remotely hosted demo.
