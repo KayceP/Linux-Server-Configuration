@@ -158,6 +158,19 @@ sys.path.insert(0, "/var/www/catalog/")
 from catalog import app as application
 ```
 
+### 12 - Install virtual environment, Flask and the project's dependencies
+1. Install *pip*, the tool for installing Python packages: `$ sudo apt-get install python-pip`.
+2. If *virtualenv* is not installed, use *pip* to install it using the following command: `$ sudo pip install virtualenv`.
+3. Move to the *catalog* folder: `$ cd /var/www/catalog`. Then create a new virtual environment with the following command: `$ sudo virtualenv venv`.
+4. Activate the virtual environment: `$ source venv/bin/activate`.
+5. Change permissions to the virtual environment folder: `$ sudo chmod -R 777 venv`.
+
+### 13 - Install Flask and the project's dependencies
+1. Install Flask: `$ pip install Flask`.
+2. Install all the other project's dependencies: `$ pip install bleach httplib2 request oauth2client sqlalchemy psycopg2`. 
+
+Sources for steps #12 and #13: [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps), [Dabapps](http://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/).
+
 ## Running (For a casual viewer)
 - For a live demo of the web application being hosted, [click here](http://www.patternrecognition.io/omenu).
 - This live demonstration will be moved in the future, so if it is inactive my apologies! Please [contact me](mailto:admin@patternrecognition.io) if you'd like to see the remotely hosted demo.
