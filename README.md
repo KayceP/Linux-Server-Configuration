@@ -59,7 +59,7 @@ Private Key: Only shared with our grader at Udacity.
 
 Sudo Password once logged in via SSH: Only shared with our grader at Udacity.
 
-URL of Hosted Application: [http://www.patternrecognition.io/omenu](http://www.patternrecognition.io/omenu)
+URL of Hosted Application: [http://www.patternrecognition.io/catalog](http://www.patternrecognition.io/catalog)
 
 ## My Detailed Configuration Instructions
 
@@ -145,8 +145,8 @@ Below you will find each and every step I personally took to configure my custom
    * Go to: `$ cd /var/www`.
    * Make the directory: `$ sudo mkdir catalog`.
 2. Change owner for the catalog folder: `$ sudo chown -R grader:grader catalog`.
-3. Go inside your new folder: `$ cd /catalog`
-4. Clone the catalog repository from Github: $ git clone https://github.com/KayceP/OMenu.git catalog.
+3. Go inside your new folder: `$ cd catalog`
+4. Clone the catalog repository from Github: `$ git clone https://github.com/iliketomatoes/catalog.git catalog`.
 5. Make a file named `catalog.wsgi` to serve the application over the mod_wsgi. That file should look like this:
 
 ```python
@@ -219,8 +219,8 @@ Source: [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-r
 ```python
 engine = create_engine('postgresql://catalog:postgres@localhost/catalog')
 ```
-12. Setup the database with: `$ python /var/www/catalog/catalog/database_setup.py`.
-13. To prevent potential attacks from the outer world we double check that no remote connections to the database are allowed. Open the following file: `$ sudo nano /etc/postgresql/9.3/main/pg_hba.conf` and edit it, if necessary, to make it look like this: 
+12. Setup the database with: `$ python /var/www/catalog/catalog/setup_database.py`.
+13. To prevent potential attacks from the outer world we double check that no remote connections to the database are allowed. Open the following file: `$ sudo nano /etc/postgresql/9.5/main/pg_hba.conf` and edit it, if necessary, to make it look like this: 
 ```
 local   all             postgres                                peer
 local   all             all                                     peer
