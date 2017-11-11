@@ -23,8 +23,6 @@ This project utilizes:
 - Linode (A VPS (Virtual Private Server)) Provider
 - Ubuntu (16.04 LTS), using:
   - Uncomplicated Firewall (UFW)
-  - Fail2ban
-  - Sendmail
   - Finger
   - Apache
   - Mod_wsgi
@@ -59,7 +57,7 @@ Private Key: Only shared with our grader at Udacity.
 
 Sudo Password once logged in via SSH: Only shared with our grader at Udacity.
 
-URL of Hosted Application: [http://www.patternrecognition.io/catalog](http://www.patternrecognition.io/catalog)
+URL of Hosted Application: [http://www.patternrecognition.io](http://www.patternrecognition.io)
 
 ## My Detailed Configuration Instructions
 
