@@ -248,7 +248,7 @@ Source: [eHowStuff](http://www.ehowstuff.com/how-to-install-and-use-glances-syst
 4. Type `$ glances -h` to know more about this program's options.
 
 ## Running (For a casual viewer)
-- For a live demo of the web application being hosted, [click here](http://www.patternrecognition.io/omenu).
+- For a live demo of the web application being hosted, [click here](http://www.patternrecognition.io).
 - This live demonstration will be moved in the future, so if it is inactive my apologies! Please [contact me](mailto:admin@patternrecognition.io) if you'd like to see the remotely hosted demo.
 
 ## Credits
